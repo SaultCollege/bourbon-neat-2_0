@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.csd322</groupId>
-    <artifactId>bourbon-neat-2_0</artifactId>
+    <artifactId>bourbon-neat-bitters-2_0</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>bourbon-neat-2_0</name>
+    <name>bourbon-neat-bitters-2_0</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>

@@ -61,23 +61,15 @@ and open the template in the editor.
 }
 
 
-.default-neat-grid {
-  @include grid-container;
-}
-
-.default-neat-grid__a-single-column {
-  @include grid-column(1);
-}
-
-$custom-grid--thirds: (
-  columns: 3,
-  gutter: 60px,
+/* Nested grids http://neat.bourbon.io/examples/ */
+$outer-grid: (
+  columns: 1,
+  gutter: 160px,
 );
-
-.custom-grid--thirds {
+.outer-grid {
   @include grid-container;
 }
-
-.custom-grid--thirds__a-single-column {
-  @include grid-column(1, $custom-grid--thirds);
+.outer-grid-item {
+  @include grid-column(1, $outer-grid);
+  color: black;
 }

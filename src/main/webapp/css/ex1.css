@@ -317,11 +317,27 @@ body {
   float: left;
   margin-left: 20px; }
 
+.default-neat-grid::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.default-neat-grid__a-single-column {
+  width: calc(8.33333% - 21.66667px);
+  float: left;
+  margin-left: 20px; }
+
 /* Nested grids http://neat.bourbon.io/examples/ */
 .outer-grid::after {
   clear: both;
   content: "";
   display: block; }
+
+.outer-grid .header {
+  width: calc(100% - 320px);
+  float: left;
+  margin-left: 160px;
+  color: black; }
 
 .outer-grid-item {
   width: calc(100% - 320px);
@@ -329,4 +345,96 @@ body {
   margin-left: 160px;
   color: black; }
 
-/*# sourceMappingURL=bourbon-neat-bitters.css.map */
+.outer-grid .footer {
+  width: calc(100% - 320px);
+  float: left;
+  margin-left: 160px;
+  color: blue;
+  text-align: center; }
+
+.sidebar-layout::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.sidebar-layout__sidebar {
+  width: calc(16.66667% - 46.66667px);
+  float: left;
+  margin-left: 40px; }
+
+.sidebar-layout__main {
+  width: calc(83.33333% - 73.33333px);
+  float: left;
+  margin-left: 40px; }
+
+.main {
+  margin-left: -40px;
+  margin-right: -40px;
+  width: calc(100% + 80px); }
+  .main::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.main__item_col-1 {
+  width: calc(16.66667% - 46.66667px);
+  float: left;
+  margin-left: 40px;
+  margin-bottom: 1rem; }
+
+.main__item_col-2 {
+  width: calc(33.33333% - 53.33333px);
+  float: left;
+  margin-left: 40px;
+  margin-bottom: 1rem; }
+
+.main__item_col-3 {
+  width: calc(50% - 60px);
+  float: left;
+  margin-left: 40px;
+  margin-bottom: 1rem; }
+
+.main__item_col-4 {
+  width: calc(66.66667% - 66.66667px);
+  float: left;
+  margin-left: 40px;
+  margin-bottom: 1rem; }
+
+.main__item_col-5 {
+  width: calc(83.33333% - 73.33333px);
+  float: left;
+  margin-left: 40px;
+  margin-bottom: 1rem; }
+
+.main__item_col-6 {
+  width: calc(100% - 80px);
+  float: left;
+  margin-left: 40px;
+  margin-bottom: 1rem; }
+
+.grid2 {
+  margin-left: -40px;
+  margin-right: -40px;
+  width: calc(100% + 80px); }
+  .grid2::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.grid2__item {
+  width: calc(33.33333% - 53.33333px);
+  float: left;
+  margin-left: 40px;
+  margin-bottom: 1rem; }
+
+.custom-grid--thirds::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.custom-grid--thirds__a-single-column {
+  width: calc(33.33333% - 80px);
+  float: left;
+  margin-left: 60px; }
+
+/*# sourceMappingURL=ex1.css.map */
